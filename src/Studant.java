@@ -1,60 +1,75 @@
-public abstract class Studant  {
-    private long id ;
+import java.util.ArrayList;
 
-    public Studant(int id, String name) {
-        this.id = id;
-        this.name = name;
-    }
-
+public class Studant {
     private String name;
-    private boolean ismale;
-
-    public boolean isIsmale() {
-        return ismale;
-    }
-
-    public Studant() {
-        this.id = id;
-        this.name = name;
-        this.ismale = ismale;
-    }
-
-    public void setIsmale(boolean ismale) {
-        if (true){
-            id=120000+1000_000_000;
-
-
-        }
-        else {
-            id=20220000+1000_000_000;
-        }
-        this.ismale = ismale;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
+    private int id;
+    private double gba;
 
     public String getName() {
         return name;
-    }
-
-    @Override
-    public String toString() {
-        return "Studant{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                '}';
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
+    @Override
+    public String toString() {
+        return "Studant{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", gba=" + gba +
+                '}';
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public double getGba() {
+        return gba;
+    }
+
+    public void setGba(double gba) {
+        this.gba = gba;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+//    public void getAvg(double g,double g1) {
+//        double sum=0;
+////        int num= grades.size();
+//        System.out.println(sum);
+////        sum=g+g1;
+////       double ave=sum/num;
+////       System.out.println(ave);
+
+
+
+
+//    public void addGrade(double grade){
+//        grades.add(grade);
+//    }
+
+//    public ArrayList<Double> getGrad() {
+//        return grades;
+//    }
+
+//    public void setGrad(ArrayList<Double> grad) {
+//
+//        this.grades = grad;
+//    }
+
+    public Studant(String name, int id,double gba) {
+        this.name = name;
+        this.id = id;
+        this.gba=gba;
+
+    }
+
+//    private ArrayList<Double>grades;
 
 
 }
